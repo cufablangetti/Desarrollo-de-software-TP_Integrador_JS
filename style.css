@@ -280,32 +280,16 @@ margin-left: 16%;
 
 /* ==== MEDIA QUERIES ==== */
 
-@media screen and (min-width: 768px) {
-  .container__contentHeader {
-    flex-direction: row;
-  }
-
+@media screen and (min-width: 600px) {
   .containerProductStore {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, .6fr);
   }
-
+  
   .containerTargetItem {
-    width: 45%;
+    width: 15vw;
   }
 
-  .buttonSearch, .buttonAdd {
-    width: 48%;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .containerProductStore {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .containerTargetItem {
-    width: 30%;
-  }
+  
 }
 
 /* ==== SCROLLBAR ==== */
