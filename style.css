@@ -278,51 +278,17 @@ margin-left: 16%;
   background-color: red;
 }
 
-
-
 /* ==== MEDIA QUERIES ==== */
+
 @media screen and (min-width: 600px) {
-  .container__contentHeader {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .headerSearch {
-    flex-direction: row;
-    gap: 20px;
-    margin-bottom: 0;
-  }
-
-  .container__view {
-    flex-direction: row;
-  }
-
-  .listAside {
-    height: 100vh;
-    padding: 20px;
-  }
-
   .containerProductStore {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, .6fr);
   }
-
+  
   .containerTargetItem {
-    width: auto;
-    height: 350px;
-  }
-
-  .popUpContainer {
-    width: 50%;
-    height: 50%;
-    max-height: none;
-  }
-
-  .containerInputs__popUp input,
-  .containerInputs__popUp select {
-    max-width: none;
+    width: 15vw;
   }
 }
-
 
 /* ==== SCROLLBAR ==== */
 ::-webkit-scrollbar {
