@@ -289,8 +289,19 @@ margin-left: 16%;
     width: 15vw;
   }
 
-  .store {
-    overflow: hidden;
+  ::-webkit-scrollbar {
+    width: .2rem;
+    background-color: #fff;
+    border-radius: .1rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #4751dd;
+    border-radius: .1rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #4f5aef;
   }
 }
 
