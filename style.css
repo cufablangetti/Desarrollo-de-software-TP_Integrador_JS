@@ -374,15 +374,15 @@ margin-left: 16%;
 }
 
 .listAside ul li {
-    font-size: 2vh; /* Ajusta el tamaño de la letra para los elementos de la lista */
+    font-size: 1.5vh; /* Ajusta el tamaño de la letra para los elementos de la lista */
 }
 
 .containerTargetItem h2 {
-    font-size: 2vh; /* Ajusta el tamaño de la letra para los títulos de los productos */
+    font-size: 1vh; /* Ajusta el tamaño de la letra para los títulos de los productos */
 }
 
 .containerTargetItem p {
-    font-size: 1.8vh; /* Ajusta el tamaño de la letra para los datos de los productos */
+    font-size: 1vh; /* Ajusta el tamaño de la letra para los datos de los productos */
 }
 
 }
