@@ -303,10 +303,10 @@ margin-left: 16%;
 
   /* Input de búsqueda centrado y pequeño */
   .inputHeader {
-      width: 65%; /* Reduce el ancho del input */
+      width: 25%; /* Reduce el ancho del input */
       height: 4vh;
       font-size: 2vh;
-      margin-left: 5%;
+      margin-left: 2%;
   }
 
   /* Botón de búsqueda */
@@ -316,17 +316,15 @@ margin-left: 16%;
       margin-left: 80%;
       display: flex;
       align-items: center;
-      justify-content: center; /* Centra el texto y el ícono */
   }
 
   /* Botón de agregar producto alineado */
   .buttonAdd {
-      width: 30%; /* Ajuste del ancho del botón de agregar */
+      width: 70%; /* Ajuste del ancho del botón de agregar */
       font-size: 2vh;
       margin-left: 1vw;
       display: flex;
       align-items: center;
-      justify-content: center; /* Centra el texto y el ícono */
   }
 
   /* Modal de agregar/editar producto */
