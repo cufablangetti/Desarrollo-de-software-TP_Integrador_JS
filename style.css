@@ -281,7 +281,7 @@ margin-left: 16%;
 /* ==== MEDIA QUERIES ==== */
 
 @media (max-width: 768px) {
-  /* Contenedor de productos con scroll vertical */
+  
   .containerProductStore {
       width: 100%;
       display: flex;
@@ -291,46 +291,45 @@ margin-left: 16%;
       padding: 2vh;
   }
 
-  /* Contenedor de la barra de búsqueda y agregar producto */
+  
   .headerSearch {
       display: flex;
-      justify-content: space-between; /* Espacia los elementos horizontalmente */
-      align-items: center; /* Centra verticalmente los elementos */
+      justify-content: space-between;
+      align-items: center; 
       padding: 1vh 2vw;
       width: 100%;
-      margin: 0; /* Asegúrate de que no haya margen */
+      margin: 0; 
   }
 
-  /* Input de búsqueda centrado verticalmente y pequeño */
+ 
   .inputHeader {
-      width: 39%; /* Ajuste del ancho del input */
+      width: 39%;
       height: 4vh;
       font-size: 2vh;
       flex-shrink: 0;
-      margin: 0; /* Asegúrate de que no haya margen */
+      margin: 0;
   }
 
-  /* Botón de búsqueda centrado verticalmente */
+  
   .buttonSearch {
-      width: auto; /* Ancho adecuado para el botón */
+      width: auto; 
       font-size: 2vh;
       margin-left: 1vw;
-      flex-shrink: 0; /* Evita que el botón se encoja */
+      flex-shrink: 0; 
       display: flex;
-      align-items: center; /* Centra verticalmente el texto y el ícono */
+      align-items: center;
   }
 
-  /* Botón de agregar producto centrado verticalmente */
+ 
   .buttonAdd {
-      width: auto; /* Ajuste del ancho del botón de agregar */
+      width: auto; 
       font-size: 2vh;
       margin-left: 1vw;
-      flex-shrink: 0; /* Evita que el botón se encoja */
+      flex-shrink: 0; 
       display: flex;
-      align-items: center; /* Centra verticalmente el texto y el ícono */
+      align-items: center; 
   }
 
-  /* Contenedor principal del header */
   .container__contentHeader {
       width: 90%;
       display: flex;
@@ -339,7 +338,7 @@ margin-left: 16%;
       gap: 1vh;
   }
 
-  /* Modal de agregar/editar producto */
+  
   .popUpContainer {
       width: 90vw;
       padding: 2vh 4vw;
@@ -351,36 +350,36 @@ margin-left: 16%;
       margin-bottom: 2vh;
   }
 
-  /* Botones de guardar y cancelar en el modal */
+ 
   .buttonSave, .buttonCancel {
       width: 48%;
       font-size: 2vh;
       margin: 1vh 1vw;
   }
 
-  /* ==== SCROLLBAR ==== */
-  /* Para ocultar el scrollbar en móviles */
+ 
   .store {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
   }
 
   .store::-webkit-scrollbar {
-    display: none; /* Chrome, Safari y Opera */
+    display: none; 
   }
 
-/* Ajuste específico para la categoría "Hamburguesas" */
+
 .sectionStore .containerTitleSection h3 {
-  font-size: 1.5vh; /* Ajusta el tamaño de la letra para los títulos de las secciones */
+  font-size: 2.5vh; 
 }
 
 
 .containerTargetItem h2 {
-    font-size: 1.5vh; /* Ajusta el tamaño de la letra para los títulos de los productos */
+    font-size: 1.5vh; 
 }
 
 .containerTargetItem p {
-    font-size: 1.5vh; /* Ajusta el tamaño de la letra para los datos de los productos */
+    font-size: 1.5vh; 
+
 }
 
 }
