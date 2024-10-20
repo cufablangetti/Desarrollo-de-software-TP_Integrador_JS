@@ -317,18 +317,18 @@ margin-left: 16%;
       flex-shrink: 0; /* Evita que el botón se encoja */
       display: flex;
       align-items: center; /* Centra verticalmente el texto y el ícono */
-      justify-content: center; /* Centra horizontalmente el contenido */
+      
   }
 
   /* Botón de agregar producto centrado verticalmente */
   .buttonAdd {
-      width: 30%; /* Ajuste del ancho del botón de agregar */
+      width: 90%; /* Ajuste del ancho del botón de agregar */
       font-size: 2vh;
       margin-left: 1vw;
       flex-shrink: 0; /* Evita que el botón se encoja */
       display: flex;
       align-items: center; /* Centra verticalmente el texto y el ícono */
-      justify-content: center; /* Centra horizontalmente el contenido */
+     
   }
 
   /* Modal de agregar/editar producto */
