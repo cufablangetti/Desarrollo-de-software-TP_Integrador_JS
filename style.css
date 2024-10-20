@@ -303,7 +303,7 @@ margin-left: 16%;
 
   /* Input de búsqueda centrado verticalmente y pequeño */
   .inputHeader {
-      width: 40%; /* Ajuste del ancho del input */
+      width: 47%; /* Ajuste del ancho del input */
       height: 4vh;
       font-size: 2vh;
       flex-shrink: 0;
@@ -314,7 +314,7 @@ margin-left: 16%;
   .buttonSearch {
       width: auto; /* Ancho adecuado para el botón */
       font-size: 2vh;
-      margin-left: 0;
+      margin-left: 1vw;
       flex-shrink: 0; /* Evita que el botón se encoja */
       display: flex;
       align-items: center; /* Centra verticalmente el texto y el ícono */
