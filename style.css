@@ -294,6 +294,7 @@ margin-left: 16%;
   /* Contenedor de la barra de búsqueda y agregar producto */
   .headerSearch {
       display: flex;
+      justify-content: space-between; /* Espacia los elementos horizontalmente */
       align-items: center; /* Centra verticalmente los elementos */
       padding: 1vh 2vw;
       width: 100%;
@@ -327,6 +328,15 @@ margin-left: 16%;
       flex-shrink: 0; /* Evita que el botón se encoja */
       display: flex;
       align-items: center; /* Centra verticalmente el texto y el ícono */
+  }
+
+  /* Contenedor principal del header */
+  .container__contentHeader {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1vh;
   }
 
   /* Modal de agregar/editar producto */
