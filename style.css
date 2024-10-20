@@ -298,7 +298,7 @@ margin-left: 16%;
       align-items: center; /* Centra verticalmente los elementos */
       padding: 1vh 2vw;
       width: 100%;
-      margin-right: 5%;
+      margin: 0; /* Asegúrate de que no haya margen */
   }
 
   /* Input de búsqueda centrado verticalmente y pequeño */
@@ -307,11 +307,12 @@ margin-left: 16%;
       height: 4vh;
       font-size: 2vh;
       flex-shrink: 0;
+      margin: 0; /* Asegúrate de que no haya margen */
   }
 
   /* Botón de búsqueda centrado verticalmente */
   .buttonSearch {
-      width: 87%; /* Ancho adecuado para el botón */
+      width: auto; /* Ancho adecuado para el botón */
       font-size: 2vh;
       margin-left: 1vw;
       flex-shrink: 0; /* Evita que el botón se encoja */
@@ -321,7 +322,7 @@ margin-left: 16%;
 
   /* Botón de agregar producto centrado verticalmente */
   .buttonAdd {
-      width: 90%; /* Ajuste del ancho del botón de agregar */
+      width: auto; /* Ajuste del ancho del botón de agregar */
       font-size: 2vh;
       margin-left: 1vw;
       flex-shrink: 0; /* Evita que el botón se encoja */
