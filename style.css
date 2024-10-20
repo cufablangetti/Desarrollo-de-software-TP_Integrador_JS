@@ -291,25 +291,42 @@ margin-left: 16%;
       padding: 2vh;
   }
 
+  /* Contenedor de la barra de búsqueda y agregar producto */
   .headerSearch {
-    width: 100%;
-    justify-content: space-between;
+      display: flex;
+      justify-content: space-between; /* Espacia los elementos horizontalmente */
+      align-items: center; /* Centra verticalmente los elementos */
+      padding: 1vh 2vw;
+      width: 100%;
+      margin-right: 5%;
   }
 
+  /* Input de búsqueda centrado verticalmente y pequeño */
   .inputHeader {
-    width: 70vw;
-    height: 4vh;
-    font-size: 2.5vh;
+      width: 65%; /* Ajuste del ancho del input */
+      height: 4vh;
+      font-size: 2vh;
+      flex-shrink: 0;
   }
 
+  /* Botón de búsqueda centrado verticalmente */
   .buttonSearch {
-    width: 25vw;
-    font-size: 2.5vh;
+      width: 87%; /* Ancho adecuado para el botón */
+      font-size: 2vh;
+      margin-left: 1vw;
+      flex-shrink: 0; /* Evita que el botón se encoja */
+      display: flex;
+      align-items: center; /* Centra verticalmente el texto y el ícono */
   }
 
+  /* Botón de agregar producto centrado verticalmente */
   .buttonAdd {
-    width: 100%;
-    font-size: 2.5vh;
+      width: 90%; /* Ajuste del ancho del botón de agregar */
+      font-size: 2vh;
+      margin-left: 1vw;
+      flex-shrink: 0; /* Evita que el botón se encoja */
+      display: flex;
+      align-items: center; /* Centra verticalmente el texto y el ícono */
   }
 
   /* Modal de agregar/editar producto */
@@ -318,7 +335,7 @@ margin-left: 16%;
       padding: 2vh 4vw;
   }
 
-  .containerInputs__popUp input, 
+  .containerInputs__popUp input,
   .containerInputs__popUp select {
       width: 100%;
       margin-bottom: 2vh;
@@ -332,16 +349,17 @@ margin-left: 16%;
   }
 
   /* ==== SCROLLBAR ==== */
-/* Para ocultar el scrollbar en móviles */
-.store {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE y Edge */
+  /* Para ocultar el scrollbar en móviles */
+  .store {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE y Edge */
+  }
+
+  .store::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Opera */
+  }
 }
 
-.store::-webkit-scrollbar {
-  display: none; /* Chrome, Safari y Opera */
-}
-}
 
 /* ==== SCROLLBAR ==== */
 ::-webkit-scrollbar {
