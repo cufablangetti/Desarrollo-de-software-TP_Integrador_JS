@@ -280,16 +280,91 @@ margin-left: 16%;
 
 /* ==== MEDIA QUERIES ==== */
 
-@media screen and (min-width: 600px) {
-  .containerProductStore {
-    grid-template-columns: repeat(4, .6fr);
-  }
-  
-  .containerTargetItem {
-    width: 15vw;
+@media screen and (max-width: 768px) {
+  /* Ajustar el header */
+  .container__contentHeader {
+    width: 90%;
+    flex-direction: column;
+    gap: 1vh;
   }
 
-  
+  /* Ajustar la búsqueda */
+  .headerSearch {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .inputHeader {
+    width: 70vw;
+    height: 4vh;
+    font-size: 2.5vh;
+  }
+
+  .buttonSearch {
+    width: 25vw;
+    font-size: 2.5vh;
+  }
+
+  .buttonAdd {
+    width: 100%;
+    font-size: 2.5vh;
+  }
+
+  /* Ocultar el scrollbar */
+  .store {
+    overflow: hidden;
+  }
+
+  /* Ajustar el layout de la tienda */
+  .container__view {
+    grid-template-columns: 1fr; /* Elementos uno debajo de otro */
+  }
+
+  .containerProductStore {
+    grid-template-columns: 1fr; /* Productos uno debajo de otro */
+  }
+
+  .containerTargetItem {
+    width: 90vw; /* Ocupa todo el ancho */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-bottom: 2vh;
+  }
+
+  .sectionStore img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+  }
+
+  /* Ajustar el pop-up */
+  .popUpContainer {
+    width: 90vw;
+    height: auto;
+  }
+
+  .containerInputs__popUp input,
+  .containerInputs__popUp select {
+    width: 80%; /* Inputs más anchos */
+  }
+
+  /* Ajustar categorías */
+  .listAside ul {
+    gap: 2vh;
+    width: 100%;
+  }
+
+  .listAside ul li {
+    font-size: 3vh;
+  }
+}
+
+/* ==== SCROLLBAR ==== */
+/* Para ocultar el scrollbar en móviles */
+.store {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE y Edge */
+}
+
+.store::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
 }
 
 /* ==== SCROLLBAR ==== */
