@@ -303,10 +303,10 @@ margin-left: 16%;
 
   /* Input de búsqueda centrado verticalmente y pequeño */
   .inputHeader {
-      width: 40%; /* Ajuste del ancho del input */
+      width: 70%; /* Ajuste del ancho del input */
       height: 4vh;
       font-size: 2vh;
-      flex-shrink: 0; /* Evita que el input se encoja */
+      margin-left: 0.2vh;
   }
 
   /* Botón de búsqueda centrado verticalmente */
