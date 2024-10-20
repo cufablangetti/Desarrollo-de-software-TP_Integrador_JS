@@ -281,70 +281,70 @@ margin-left: 16%;
 /* ==== MEDIA QUERIES ==== */
 
 @media (max-width: 768px) {
-  /* Estilos para dispositivos móviles */
-  
   /* Contenedor de productos con scroll vertical */
   .containerProductStore {
-      width: 100%; /* El contenedor ocupa el 100% del ancho */
+      width: 100%;
       display: flex;
-      flex-direction: column; /* Coloca los productos uno debajo del otro */
-      overflow-y: auto; /* Activa el scroll vertical si los productos exceden el alto de la pantalla */
-      max-height: 80vh; /* Ajuste opcional de altura máxima */
+      flex-direction: column;
+      overflow-y: auto;
+      max-height: 80vh;
       padding: 2vh;
-  }
-
-  .containerTargetItem {
-      width: 100%; /* Producto ocupa todo el ancho */
-      margin-bottom: 2vh;
   }
 
   /* Contenedor de la barra de búsqueda y agregar producto */
   .headerSearch {
       display: flex;
-      justify-content: space-between; /* Distribuye los elementos horizontalmente */
-      align-items: center; /* Centra verticalmente */
-      padding: 1vh 2vw; /* Espaciado alrededor */
-      width: 100%; /* Ocupa todo el ancho */
+      justify-content: space-between;
+      align-items: center;
+      padding: 1vh 2vw;
+      width: 100%;
+      flex-wrap: nowrap; /* Asegura que los elementos no se envuelvan en múltiples líneas */
   }
 
   /* Input de búsqueda centrado y pequeño */
   .inputHeader {
-      width: 50%; /* Ancho del input reducido para móviles */
-      height: 4vh; /* Altura del input */
-      font-size: 2vh; /* Tamaño del texto */
+      width: 45%; /* Reduce el ancho del input */
+      height: 4vh;
+      font-size: 2vh;
   }
 
-  /* Botón de búsqueda ajustado y alineado */
+  /* Botón de búsqueda */
   .buttonSearch {
-      width: 20%; /* Ajuste del ancho del botón */
-      font-size: 2vh; /* Tamaño del texto del botón */
+      width: 20%; /* Ancho reducido del botón */
+      font-size: 2vh;
       margin-left: 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Centra el texto y el ícono */
   }
 
-  /* Botón de agregar producto alineado a la derecha */
+  /* Botón de agregar producto alineado */
   .buttonAdd {
-      width: 25%; /* Ajuste del ancho del botón de agregar */
-      font-size: 2vh; /* Tamaño del texto */
+      width: 30%; /* Ajuste del ancho del botón de agregar */
+      font-size: 2vh;
       margin-left: 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Centra el texto y el ícono */
   }
 
   /* Modal de agregar/editar producto */
   .popUpContainer {
-      width: 90vw; /* Ajuste del ancho del modal */
-      padding: 2vh 4vw; /* Espaciado interno */
+      width: 90vw;
+      padding: 2vh 4vw;
   }
 
   .containerInputs__popUp input, 
   .containerInputs__popUp select {
-      width: 100%; /* Ajuste de ancho completo de los inputs */
-      margin-bottom: 2vh; /* Espaciado entre inputs */
+      width: 100%;
+      margin-bottom: 2vh;
   }
 
   /* Botones de guardar y cancelar en el modal */
   .buttonSave, .buttonCancel {
-      width: 48%; /* Ancho de los botones ajustado al 48% cada uno */
-      font-size: 2vh; /* Tamaño de texto reducido */
-      margin: 1vh 1vw; /* Margen entre los botones */
+      width: 48%;
+      font-size: 2vh;
+      margin: 1vh 1vw;
   }
 }
 
