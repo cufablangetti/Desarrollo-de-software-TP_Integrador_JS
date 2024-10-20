@@ -292,52 +292,25 @@ margin-left: 16%;
   }
 
   .headerSearch {
-    position: absolute; /* Para posicionar el contenedor sobre otros elementos */
-    top: 0; /* Ajusta la posición vertical según sea necesario */
-    left: 0; /* Alinear al borde izquierdo de la pantalla */
-    width: 100%; /* Asegura que el contenedor ocupe el ancho total */
-    padding: 1vh 2vw; /* Espaciado interno */
-    display: flex;
-    flex-direction: column; /* Cambia a columna para apilar elementos verticalmente */
-    align-items: stretch; /* Asegura que los elementos ocupen todo el ancho */
-}
+    width: 100%;
+    justify-content: space-between;
+  }
 
-/* Input de búsqueda */
-.inputHeader {
-    width: 100%; /* Ajuste del ancho del input */
+  .inputHeader {
+    width: 70vw;
     height: 4vh;
-    font-size: 2vh;
-    margin-bottom: 1vh; /* Espacio entre el input y el botón de búsqueda */
-    border-radius: 0.4rem; /* Mantiene la estética del input */
-    border: 1px solid #ccc; /* Añade un borde */
-}
+    font-size: 2.5vh;
+  }
 
-/* Botón de búsqueda */
-.buttonSearch {
-    width: 100%; /* Hacer que el botón ocupe todo el ancho */
-    font-size: 2vh;
-    margin-bottom: 1vh; /* Espacio entre el botón de búsqueda y el botón de agregar */
-    display: flex;
-    justify-content: center; /* Centra el contenido dentro del botón */
-    align-items: center; /* Centra verticalmente el texto y el ícono */
-    border-radius: 0.4rem; /* Mantiene la estética del botón */
-    background-color: transparent; /* Fondo transparente */
-    border: 1px solid #fff; /* Borde para el botón */
-    color: #fff; /* Color del texto */
-}
+  .buttonSearch {
+    width: 25vw;
+    font-size: 2.5vh;
+  }
 
-/* Botón de agregar producto */
-.buttonAdd {
-    width: 100%; /* Hacer que el botón ocupe todo el ancho */
-    font-size: 2vh;
-    display: flex;
-    justify-content: center; /* Centra el contenido dentro del botón */
-    align-items: center; /* Centra verticalmente el texto y el ícono */
-    border-radius: 0.4rem; /* Mantiene la estética del botón */
-    background-color: transparent; /* Fondo transparente */
-    border: 1px solid #fff; /* Borde para el botón */
-    color: #fff; /* Color del texto */
-}
+  .buttonAdd {
+    width: 100%;
+    font-size: 2.5vh;
+  }
 
   /* Modal de agregar/editar producto */
   .popUpContainer {
