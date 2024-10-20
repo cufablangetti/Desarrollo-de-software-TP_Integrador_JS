@@ -282,12 +282,6 @@ margin-left: 16%;
 
 @media (max-width: 768px) {
   /* Contenedor de productos con scroll vertical */
-  .container__contentHeader {
-    width: 90%;
-    flex-direction: column;
-    gap: 1vh;
-  }
-  
   .containerProductStore {
       width: 100%;
       display: flex;
@@ -304,37 +298,36 @@ margin-left: 16%;
       align-items: center; /* Centra verticalmente los elementos */
       padding: 1vh 2vw;
       width: 100%;
-      margin-right: 5%;
+      margin: 0; /* Asegúrate de que no haya margen */
   }
 
   /* Input de búsqueda centrado verticalmente y pequeño */
   .inputHeader {
-      width: 65%; /* Ajuste del ancho del input */
+      width: 60%; /* Ajuste del ancho del input */
       height: 4vh;
       font-size: 2vh;
       flex-shrink: 0;
+      margin: 0; /* Asegúrate de que no haya margen */
   }
 
   /* Botón de búsqueda centrado verticalmente */
   .buttonSearch {
-      width: 87%; /* Ancho adecuado para el botón */
+      width: auto; /* Ancho adecuado para el botón */
       font-size: 2vh;
       margin-left: 1vw;
       flex-shrink: 0; /* Evita que el botón se encoja */
       display: flex;
       align-items: center; /* Centra verticalmente el texto y el ícono */
-      
   }
 
   /* Botón de agregar producto centrado verticalmente */
   .buttonAdd {
-      width: 90%; /* Ajuste del ancho del botón de agregar */
+      width: auto; /* Ajuste del ancho del botón de agregar */
       font-size: 2vh;
       margin-left: 1vw;
       flex-shrink: 0; /* Evita que el botón se encoja */
       display: flex;
       align-items: center; /* Centra verticalmente el texto y el ícono */
-     
   }
 
   /* Modal de agregar/editar producto */
@@ -343,7 +336,7 @@ margin-left: 16%;
       padding: 2vh 4vw;
   }
 
-  .containerInputs__popUp input, 
+  .containerInputs__popUp input,
   .containerInputs__popUp select {
       width: 100%;
       margin-bottom: 2vh;
@@ -357,16 +350,17 @@ margin-left: 16%;
   }
 
   /* ==== SCROLLBAR ==== */
-/* Para ocultar el scrollbar en móviles */
-.store {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE y Edge */
+  /* Para ocultar el scrollbar en móviles */
+  .store {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE y Edge */
+  }
+
+  .store::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Opera */
+  }
 }
 
-.store::-webkit-scrollbar {
-  display: none; /* Chrome, Safari y Opera */
-}
-}
 
 /* ==== SCROLLBAR ==== */
 ::-webkit-scrollbar {
