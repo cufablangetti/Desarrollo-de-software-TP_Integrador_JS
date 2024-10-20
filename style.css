@@ -368,6 +368,23 @@ margin-left: 16%;
   .store::-webkit-scrollbar {
     display: none; /* Chrome, Safari y Opera */
   }
+
+  .listAside h2 {
+    font-size: 2.5vh; /* Ajusta el tamaño de la letra para las categorías */
+}
+
+.listAside ul li {
+    font-size: 2vh; /* Ajusta el tamaño de la letra para los elementos de la lista */
+}
+
+.containerTargetItem h2 {
+    font-size: 2vh; /* Ajusta el tamaño de la letra para los títulos de los productos */
+}
+
+.containerTargetItem p {
+    font-size: 1.8vh; /* Ajusta el tamaño de la letra para los datos de los productos */
+}
+
 }
 
 
