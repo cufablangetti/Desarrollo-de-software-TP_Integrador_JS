@@ -349,6 +349,17 @@ margin-left: 16%;
       font-size: 2vh;
       margin: 1vh 1vw;
   }
+
+  /* ==== SCROLLBAR ==== */
+/* Para ocultar el scrollbar en móviles */
+.store {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE y Edge */
+}
+
+.store::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
 }
 
 /* ==== SCROLLBAR ==== */
