@@ -280,101 +280,72 @@ margin-left: 16%;
 
 /* ==== MEDIA QUERIES ==== */
 
-@media screen and (max-width: 768px) {
-  /* Ajustar el layout de la tienda */
-  .container__view {
-    display: flex;  /* Usar flexbox para disponer las categorías y los productos */
-    flex-direction: row; /* Disposición en fila */
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%; /* Abarca todo el ancho */
-  }
-
-  /* Ajustar categorías (a la izquierda) */
-  .listAside {
-    width: 25%; /* Categorías ocupan 25% del ancho */
-  }
-
-  .listAside ul {
-    width: 100%;
-  }
-
-  .listAside ul li {
-    font-size: 1.5vh; /* Tamaño de letra pequeño */
-    line-height: 3vh; /* Espaciado entre líneas */
-  }
-
-  /* Ajustar la tienda (productos a la derecha) */
+@media (max-width: 768px) {
+  /* Estilos para dispositivos móviles */
+  
+  /* Contenedor de productos con scroll vertical */
   .containerProductStore {
-    width: 70%; /* Productos ocupan 70% del ancho */
-    display: grid;
-    grid-template-columns: 1fr; /* Productos uno debajo de otro */
-    gap: 2vh;
+      width: 100%; /* El contenedor ocupa el 100% del ancho */
+      display: flex;
+      flex-direction: column; /* Coloca los productos uno debajo del otro */
+      overflow-y: auto; /* Activa el scroll vertical si los productos exceden el alto de la pantalla */
+      max-height: 80vh; /* Ajuste opcional de altura máxima */
+      padding: 2vh;
   }
 
   .containerTargetItem {
-    width: 100%; /* Ocupa todo el ancho del área de productos */
-    margin-bottom: 2vh;
+      width: 100%; /* Producto ocupa todo el ancho */
+      margin-bottom: 2vh;
   }
 
-  .sectionStore img {
-    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
-  }
-
-  /* Ajustar el header */
-  .container__contentHeader {
-    width: 100%;
-    flex-direction: column;
-    gap: 1vh;
-  }
-
+  /* Contenedor de la barra de búsqueda y agregar producto */
   .headerSearch {
-    width: 100%;
-    justify-content: space-between;
+      display: flex;
+      justify-content: space-between; /* Distribuye los elementos horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      padding: 1vh 2vw; /* Espaciado alrededor */
+      width: 100%; /* Ocupa todo el ancho */
   }
 
+  /* Input de búsqueda centrado y pequeño */
   .inputHeader {
-    width: 45vw;
-    height: 4vh;
-    font-size: 1vh;
+      width: 50%; /* Ancho del input reducido para móviles */
+      height: 4vh; /* Altura del input */
+      font-size: 2vh; /* Tamaño del texto */
   }
 
+  /* Botón de búsqueda ajustado y alineado */
   .buttonSearch {
-    width: 10vw;
-    font-size: 1vh;
+      width: 20%; /* Ajuste del ancho del botón */
+      font-size: 2vh; /* Tamaño del texto del botón */
+      margin-left: 1vw;
   }
 
+  /* Botón de agregar producto alineado a la derecha */
   .buttonAdd {
-    width: 25%;
-    font-size: 1vh;
+      width: 25%; /* Ajuste del ancho del botón de agregar */
+      font-size: 2vh; /* Tamaño del texto */
+      margin-left: 1vw;
   }
 
-  /* Ocultar el scrollbar */
-  .store {
-    overflow: hidden;
-  }
-
-  /* Ajustar el pop-up */
+  /* Modal de agregar/editar producto */
   .popUpContainer {
-    width: 90vw;
-    height: auto;
+      width: 90vw; /* Ajuste del ancho del modal */
+      padding: 2vh 4vw; /* Espaciado interno */
   }
 
-  .containerInputs__popUp input,
+  .containerInputs__popUp input, 
   .containerInputs__popUp select {
-    width: 80%; /* Inputs más anchos */
+      width: 100%; /* Ajuste de ancho completo de los inputs */
+      margin-bottom: 2vh; /* Espaciado entre inputs */
   }
-}
 
-/* ==== SCROLLBAR ==== */
-/* Para ocultar el scrollbar en móviles */
-.store {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE y Edge */
-}
-
-.store::-webkit-scrollbar {
-  display: none; /* Chrome, Safari y Opera */
+  /* Botones de guardar y cancelar en el modal */
+  .buttonSave, .buttonCancel {
+      width: 48%; /* Ancho de los botones ajustado al 48% cada uno */
+      font-size: 2vh; /* Tamaño de texto reducido */
+      margin: 1vh 1vw; /* Margen entre los botones */
+  }
 }
 
 /* ==== SCROLLBAR ==== */
