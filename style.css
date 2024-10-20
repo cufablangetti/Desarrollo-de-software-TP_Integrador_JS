@@ -294,7 +294,6 @@ margin-left: 16%;
   /* Contenedor de la barra de búsqueda y agregar producto */
   .headerSearch {
       display: flex;
-      justify-content: space-between; /* Espacia los elementos horizontalmente */
       align-items: center; /* Centra verticalmente los elementos */
       padding: 1vh 2vw;
       width: 100%;
