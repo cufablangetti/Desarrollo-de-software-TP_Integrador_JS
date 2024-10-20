@@ -281,14 +281,53 @@ margin-left: 16%;
 /* ==== MEDIA QUERIES ==== */
 
 @media screen and (max-width: 768px) {
+  /* Ajustar el layout de la tienda */
+  .container__view {
+    display: flex;  /* Usar flexbox para disponer las categorías y los productos */
+    flex-direction: row; /* Disposición en fila */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; /* Abarca todo el ancho */
+  }
+
+  /* Ajustar categorías (a la izquierda) */
+  .listAside {
+    width: 25%; /* Categorías ocupan 25% del ancho */
+  }
+
+  .listAside ul {
+    width: 100%;
+  }
+
+  .listAside ul li {
+    font-size: 1.5vh; /* Tamaño de letra pequeño */
+    line-height: 3vh; /* Espaciado entre líneas */
+  }
+
+  /* Ajustar la tienda (productos a la derecha) */
+  .containerProductStore {
+    width: 70%; /* Productos ocupan 70% del ancho */
+    display: grid;
+    grid-template-columns: 1fr; /* Productos uno debajo de otro */
+    gap: 2vh;
+  }
+
+  .containerTargetItem {
+    width: 100%; /* Ocupa todo el ancho del área de productos */
+    margin-bottom: 2vh;
+  }
+
+  .sectionStore img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+  }
+
   /* Ajustar el header */
   .container__contentHeader {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     gap: 1vh;
   }
 
-  /* Ajustar la búsqueda */
   .headerSearch {
     width: 100%;
     justify-content: space-between;
@@ -315,25 +354,6 @@ margin-left: 16%;
     overflow: hidden;
   }
 
-  /* Ajustar el layout de la tienda */
-  .container__view {
-    grid-template-columns: 1fr; /* Elementos uno debajo de otro */
-  }
-
-  .containerProductStore {
-    grid-template-columns: 1fr; /* Productos uno debajo de otro */
-  }
-
-  .containerTargetItem {
-    width: 90vw; /* Ocupa todo el ancho */
-    height: auto; /* Ajusta la altura automáticamente */
-    margin-bottom: 2vh;
-  }
-
-  .sectionStore img {
-    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
-  }
-
   /* Ajustar el pop-up */
   .popUpContainer {
     width: 90vw;
@@ -343,16 +363,6 @@ margin-left: 16%;
   .containerInputs__popUp input,
   .containerInputs__popUp select {
     width: 80%; /* Inputs más anchos */
-  }
-
-  /* Ajustar categorías */
-  .listAside ul {
-    gap: 2vh;
-    width: 100%;
-  }
-
-  .listAside ul li {
-    font-size: 3vh;
   }
 }
 
