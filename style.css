@@ -298,12 +298,12 @@ margin-left: 16%;
       align-items: center; /* Centra verticalmente los elementos */
       padding: 1vh 2vw;
       width: 100%;
-      flex-wrap: nowrap; /* Asegura que los elementos no se envuelvan en múltiples líneas */
+      margin-right: 5%;
   }
 
   /* Input de búsqueda centrado verticalmente y pequeño */
   .inputHeader {
-      width: 45%; /* Ajuste del ancho del input */
+      width: 65%; /* Ajuste del ancho del input */
       height: 4vh;
       font-size: 2vh;
       flex-shrink: 0;
