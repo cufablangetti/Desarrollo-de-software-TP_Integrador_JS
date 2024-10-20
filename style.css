@@ -303,16 +303,17 @@ margin-left: 16%;
 
   /* Input de búsqueda centrado y pequeño */
   .inputHeader {
-      width: 45%; /* Reduce el ancho del input */
+      width: 65%; /* Reduce el ancho del input */
       height: 4vh;
       font-size: 2vh;
+      margin-left: 5%;
   }
 
   /* Botón de búsqueda */
   .buttonSearch {
-      width: 20%; /* Ancho reducido del botón */
+      width: 60%; /* Ancho reducido del botón */
       font-size: 2vh;
-      margin-left: 1vw;
+      margin-left: 80%;
       display: flex;
       align-items: center;
       justify-content: center; /* Centra el texto y el ícono */
