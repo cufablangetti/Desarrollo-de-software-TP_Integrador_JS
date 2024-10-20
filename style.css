@@ -296,6 +296,7 @@ margin-left: 16%;
       display: flex;
       justify-content: space-between; /* Espacia los elementos horizontalmente */
       align-items: center; /* Centra verticalmente los elementos */
+      padding: 1vh 2vw;
       width: 100%;
       margin: 0; /* Asegúrate de que no haya margen */
   }
@@ -313,7 +314,7 @@ margin-left: 16%;
   .buttonSearch {
       width: auto; /* Ancho adecuado para el botón */
       font-size: 2vh;
-      margin-left: 0.5vw;
+      margin-left: 0;
       flex-shrink: 0; /* Evita que el botón se encoja */
       display: flex;
       align-items: center; /* Centra verticalmente el texto y el ícono */
