@@ -28,6 +28,8 @@ GASEOSAS: https://bk-latam-prod.s3.amazonaws.com/sites/burgerking.latam/files/BK
 
 Como ejemplo agregue productos como hamburguesas simple, hamburguesa doble hamburguesa triple usando la misma imagen con diferente precios. Lo mismo realize con las gaseosas y papas (chicas,mediana,grande).
 
+Puedes hacer una vista previa en el siguiente link: https://desarrollo-de-software-tp-integrador-js.vercel.app/
+
 Para ver el proyecto:
 
 -Descargar proyecto
